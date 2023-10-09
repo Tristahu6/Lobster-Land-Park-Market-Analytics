@@ -1,6 +1,4 @@
-# Market Analytics Project
-# Lobster Land Data Analysis and Forecasting
-
+# Lobster Land Park Market Analytics
 ## Project Background
 
 Lobster Land, a theme park in Maine, is planning a grand celebration for the July 4th Independence Day holiday. The park is set to host an international conference of hoteliers and theme park operators from July 1st to July 4th. 
