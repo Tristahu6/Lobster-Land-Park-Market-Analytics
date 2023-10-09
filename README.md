@@ -16,14 +16,74 @@ To achieve our objective, we have segmented the project into several key steps:
 
 2. **Data Cleaning and Preprocessing**: In this step, we clean and preprocess the data by removing unnecessary columns, adjusting column names, and handling missing values.
 
-3. **Standardization (for some parts)**: We standardize the values of different variables to ensure they have the same scale for analysis.
+3. **Segmentation**: Using K-Means clustering, we determine the optimal number of clusters and group skiing-themed hotels into different clusters based on various attributes.
 
-4. **Segmentation**: Using K-Means clustering, we determine the optimal number of clusters and group skiing-themed hotels into different clusters based on various attributes.
+4. **Conjoint Analysis**: Conjoint analysis is performed using customer survey data to understand the preferences of hotel guests regarding various hotel facilities. This analysis helps us identify the features and combinations that guests might prefer.
 
-5. **Conjoint Analysis**: Conjoint analysis is performed using customer survey data to understand the preferences of hotel guests regarding various hotel facilities. This analysis helps us identify the features and combinations that guests might prefer.
+5. **Classification**: We build a logistic regression model to predict guest satisfaction based on various factors. We assess the model's performance and provide recommendations for improving guest satisfaction.
 
-6. **Forecasting**: We forecast the annual net income for a selected hotel using time series forecasting techniques. First, we preprocess and analyze the financial data for the hotel. Then, we apply the ARIMA model to make revenue forecasts for the upcoming years.
+### 1. **Packages:**
 
-7. **Classification**: We build a logistic regression model to predict guest satisfaction based on various factors. We assess the model's performance and provide recommendations for improving guest satisfaction.
+#### 1.1 **`pandas` (alias `pd`):**
+- Functions Used:
+  - `pd.read_csv()`
+  - `.head()`
+  - `.info()`
+  - `.describe()`
+  - `.isnull().sum()`
+  - `.drop()`
+  - `.dropna()`
+  - `.astype()`
+  - `.groupby()`
+  - `.agg()`
+  - `.rename()`
+  - `.replace()`
 
-8. **A/B Testing & Statistical Testing**: Lobster Land purchased three promotional photos and collected a dataset testing their popularity among a group. We've analyzed the data from these tests to assist Lobster Land in selecting one image for the conference invitations.
+#### 1.2 **`numpy` (alias `np`):**
+- Functions Used:
+  - `np.nan`
+  
+#### 1.3 **`seaborn` (alias `sns`):**
+- Functions Used:
+  - `sns.pointplot()`
+  - `sns.heatmap()`
+  - `sns.countplot()`
+  - `sns.scatterplot()`
+  - `sns.despine()`
+
+#### 1.4 **`matplotlib.pyplot` (alias `plt`):**
+- Functions Used:
+  - `plt.plot()`
+  - `plt.xlabel()`
+  - `plt.ylabel()`
+  - `plt.title()`
+  - `plt.xticks()`
+  - `plt.scatter()`
+  - `plt.colorbar()`
+  - `plt.figure()`
+  - `plt.show()`
+
+#### 1.5 **`scikit-learn` (imported various modules):**
+- Functions and Modules Used:
+  - `KMeans`
+  - `preprocessing`
+  - `LabelEncoder`
+  - `train_test_split`
+  - `LogisticRegression`
+  - `accuracy_score`
+  - `confusion_matrix`
+  - `classification_report`
+  
+#### 1.6 **`statsmodels.api` (alias `sm`):**
+- Functions Used:
+  - `sm.Logit()`
+  - `result.fit()`
+
+#### 1.7 **`matplotlib.patches` (alias `mpatches`):**
+
+### 2. **Other Python Functions:**
+- `print()`
+- `.value_counts()`
+- `.pivot_table()`
+- `.sort_values()`
+- `.round()`
